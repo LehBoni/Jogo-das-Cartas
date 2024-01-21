@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./src/styles/main.css">
+	<link rel="stylesheet" type="text/css" href="./src/styles/containers_and_frames.css">
+	<link rel="stylesheet" type="text/css" href="./src/styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="./src/styles/button.css">
+	<title> Jogo de Cartas</title>
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+	<div class="bg-video">
+		<video class="video" autoplay loop muted>
+			<source src="./src/assets/videos/yugi.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="container">
+		<div class="container__left">
+			<div class="score_box">
+				<span id="score_points">Win : 0 | Lose: 0</span>
+			</div>
+			<div class="menu_avatar"></div>
+			<div class="card_details">
+				<p id="card-name"></p>
+				<p id="card-type"></p>
+			</div>
+		</div>
+		<div class="container__right">
+			<div class="card-box__container"></div>
+			
+		</div>
+	</div>
+	<script src="./jogodecartas/src/scripts/engine.js" defer></script>
+</body>
+</html>
